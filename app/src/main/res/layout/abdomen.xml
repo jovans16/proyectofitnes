@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#A5A5E8">
+
+    <!-- Título del entrenamiento -->
+    <TextView
+        android:id="@+id/tituloEntrenamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrenamiento Abdomen"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_gravity="center"/>
+
+    <!-- Contenedor para el botón y nivel -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/BtnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            android:textColor="#FFFF"/>
+
+        <TextView
+            android:id="@+id/nivelEjercicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Nivel"
+            android:textSize="16sp"
+            android:gravity="end"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <!-- Día del ejercicio -->
+    <TextView
+        android:id="@+id/dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Día 1"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginTop="8dp"/>
+
+    <!-- ListView para mostrar los ejercicios -->
+    <ListView
+        android:id="@+id/listViewEjerciciosAb"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"/>
+
+    <!-- Botón para iniciar -->
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar"
+        android:layout_gravity="center"
+        android:backgroundTint="#994285F4"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

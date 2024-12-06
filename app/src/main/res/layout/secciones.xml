@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66A831A4">
+
+    <TextView
+        android:id="@+id/tituloTipoEntrenamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Secciones de entrenamiento"
+        android:textColor="#000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/brazoLayout"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="32dp"
+        android:background="#00E9EA"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tituloTipoEntrenamiento">
+
+        <ImageView
+            android:id="@+id/brazoImageView"
+            android:layout_width="145dp"
+            android:layout_height="125dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/loginf" />
+
+        <TextView
+            android:id="@+id/brazoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brazo"
+            android:textAlignment="center"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/abdominalesLayout"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="15dp"
+        android:background="#B30CA4F0"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tituloTipoEntrenamiento"
+        tools:ignore="NotSibling">
+
+        <ImageView
+            android:id="@+id/abdominalesImageView"
+            android:layout_width="145dp"
+            android:layout_height="125dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/loginf" />
+
+        <TextView
+            android:id="@+id/abdominalesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abdominales"
+            android:textAlignment="center"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pechoLayout"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="32dp"
+        android:background="#B30CA4F0"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/brazoLayout">
+
+        <ImageView
+            android:id="@+id/pechoImageView"
+            android:layout_width="145dp"
+            android:layout_height="125dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/loginf" />
+
+        <TextView
+            android:id="@+id/pechoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pecho"
+            android:textAlignment="center"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/espaldaLayout"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="15dp"
+        android:background="#00E9EA"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/abdominalesLayout">
+
+        <ImageView
+            android:id="@+id/espaldaImageView"
+            android:layout_width="145dp"
+            android:layout_height="125dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/loginf" />
+
+        <TextView
+            android:id="@+id/espaldaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Espalda"
+            android:textAlignment="center"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/piernasLayout"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="52dp"
+        android:background="#00E9EA"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pechoLayout">
+
+        <ImageView
+            android:id="@+id/piernasImageView"
+            android:layout_width="145dp"
+            android:layout_height="125dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/loginf" />
+
+        <TextView
+            android:id="@+id/piernasTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Piernas"
+            android:textAlignment="center"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/todoCuerpoLayout"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="15dp"
+        android:background="#B30CA4F0"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/espaldaLayout">
+
+        <ImageView
+            android:id="@+id/todoCuerpoImageView"
+            android:layout_width="145dp"
+            android:layout_height="125dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/loginf" />
+
+        <TextView
+            android:id="@+id/todoCuerpoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Todo el cuerpo"
+            android:textAlignment="center"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dietaLayout"
+        android:layout_width="131dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/holo_blue_light"
+        android:padding="0dp"
+        android:text="Dietas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
